@@ -465,6 +465,272 @@ and (-webkit-device-pixel-ratio: 3){
         width: 100%;
 
     }}
+
+    /*Service*/
+
+    #service{
+
+        width: 100%;
+        padding: 70px 0;
+        background: #131313;
+    }
+    #service .title-text h1 {
+        color: whitesmoke;
+    }
+    #service .title-text p{
+        color: whitesmoke;
+    }
+
+    .service-box{
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .single-service{
+        flex-basis: 48%;
+        text-align: center;
+        border-radius: 7px;background: linear-gradient(rgba(0,0,0,0.5),#1c0905);
+        margin-bottom: 20px;
+        color: whitesmoke;
+        position: relative;
+    }
+
+    .single-service img{
+        width: 100%;
+        border-radius: 7px;
+    }
+
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        border-radius: 7px;
+        cursor: pointer;
+        background: linear-gradient(rgba(0,0,0,0.5),#1c0905);
+        opacity: 0;
+        transition: 1s;
+
+    }
+
+    .single-service:hover .overlay{
+        opacity: 1;
+
+    }
+
+    .service-desc{
+        width: 75%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%);
+        transition: 1s;
+    }
+
+    hr{
+        background: whitesmoke;
+        height: 2px;
+        border: 0;
+        margin: 15px auto;
+        width: 50%;
+    }
+
+    .service-desc p{
+        font-size: 14px;
+    }
+
+    .single-service:hover .service-desc {
+        bottom: 40%;
+        opacity: 1;
+
+    }
+    
+     /* iphone 6, 6s, 7, 8 */
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-height: 667px)  
+and (-webkit-device-pixel-ratio: 2){
+
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-service:hover .service-desc{
+        bottom: 25% !important;
+        
+    }
+    
+    
+}
+
+
+/*Testimonial*/
+
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+    background-image: url(backgroundtestimonials.jpg);
+    background-size: cover;
+}
+
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #131313;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.testimonial-col p{
+    font-size: 14px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.user-info .fa{
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+
+.user-info small{
+    color: #131313;
+}
+
+.testimonial-col:hover{
+    transform: translateY(7px);
+}
+
+ /* iphone 6, 6s, 7, 8 */
+
+ @media only screen 
+ and (min-device-width: 375px) 
+ and (max-device-height: 667px)  
+ and (-webkit-device-pixel-ratio: 2){
+    .testimonial-col{
+     flex-basis: 100%;
+ }
+}
+
+/*footer*/
+
+#footer{
+    padding: 100px 0 20px;
+    background: #131313;
+    
+    
+}
+
+#footer h1{
+    color:whitesmoke ;
+}
+#footer p{
+    color: whitesmoke;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-right{
+    text-align: right
+}
+
+.footer-row h1{
+    margin: 10px 0;
+}
+
+.footer-row p{
+   line-height: 35px;
+}
+
+.footer-left .fa,.footer-right .fa{
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 10px;
+
+}
+
+.laredo{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.meicon{
+    width: 400px;
+    height: 500px;
+    margin-top: -200px;
+}
+
+.social-icons{
+    text-align: center;
+}
+
+.social-icons .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid whitesmoke;
+    margin: 40px 0;
+    color: whitesmoke;
+    margin-bottom: 75px;
+    cursor: pointer;
+}
+
+/* iphone 6, 6s, 7, 8 */
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-height: 667px)  
+and (-webkit-device-pixel-ratio: 2){
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+}
     
 
 

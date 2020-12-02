@@ -210,6 +210,11 @@ and (-webkit-device-pixel-ratio: 3) {
         position: relative;
         z-index: 1;
     
+
+    }
+
+    #testimonial{
+        
     }
 
 }

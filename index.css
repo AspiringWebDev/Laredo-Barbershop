@@ -439,7 +439,8 @@ and (-webkit-device-pixel-ratio: 3){
 @media only screen 
     and (device-width : 375px) 
     and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3){.title-text h1{
+    and (-webkit-device-pixel-ratio : 3){
+        .title-text h1{
         font-size: 25px;
         
     }
@@ -710,7 +711,7 @@ and (device-height : 812px)
 and (-webkit-device-pixel-ratio : 3){
     .testimonial-col{
         flex-basis: 100%;
-        width: 100vw;
+        
         
     }
 
@@ -812,6 +813,19 @@ and (-webkit-device-pixel-ratio: 3)
     flex-basis: 100%;
     font-size: 12px;
 }}
+
+/*Iphone X */
+/* 2436x1125px at 458ppi */
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3){
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 12px;
+    }
+
+}
     
 
 

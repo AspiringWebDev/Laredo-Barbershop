@@ -827,7 +827,105 @@ and (-webkit-device-pixel-ratio : 3){
 
 }
     
+/* All Smartphones in portrait and landscape ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .logo{
+        width: 150px;
+        position: absolute;    
+        left: 5%;
+    }
 
+    .banner-text{
+        text-align: center;
+        color: whitesmoke;
+        padding-top: 150px;
+    }
+
+    .banner-text h1 {
+
+        font-size: 25px;
+        font-family: 'Diplomata SC', cursive;
+    }
+
+    .banner-text p{
+        padding-top: 16px;
+        font-family: 'Syne Mono', monospace;
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    .banner-btn a{
+width: 150px;
+text-align: center;
+text-decoration: none;
+display: block;
+
+margin: 20px;
+padding: 12px 0;
+color: whitesmoke;
+border: .5px solid whitesmoke;
+position: relative;
+z-index: 1;
+
+}
+.title-text h1{
+    font-size: 25px;
+    
+}
+.features{
+    flex-basis: 100%;
+}
+.features h1{
+    font-size: 20px;
+}
+.features-desc{
+    font-size: 12px;
+}
+.features-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;        
+    color: #131313;      
+}
+.features-img{
+    flex-basis: 100%;    
+}
+.features-img img{
+    width: 100%;
+
+}
+.single-service{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+.service-desc p{
+    font-size: 12px;
+    }
+
+.single-service:hover .service-desc{
+    bottom: 25% !important;
+    
+}
+
+.testimonial-col{
+    flex-basis: 100%;
+    
+}
+
+.footer-left,.footer-right{
+    flex-basis: 100%;
+    font-size: 14px;
+}
+
+
+
+
+
+}
 
     
 
